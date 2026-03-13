@@ -1,0 +1,44 @@
+// @use 'colors' as *;
+// @use 'mobile';
+// @use 'tablet';
+// @use 'desktop';
+// @use 'reset';
+@use 'styles';
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-regular.woff2') format('woff2');
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-medium.woff2') format('woff2');
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/roboto-bold.woff2') format('woff2');
+	font-weight: 700;
+	font-display: swap;
+}
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// style globalne tutaj beda zeby ich potem nie szukac kurwa po plikach:
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+a {
+	text-decoration: none;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+.wrapper {
+	max-width: 1340px;
+	width: 100%;
+	padding-inline: 2em;
+	margin: 0 auto;
+}
