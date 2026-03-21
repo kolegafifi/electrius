@@ -66,7 +66,7 @@
 		}
 		&__hero-text {
 			font-size: 4.6rem;
-			line-height: 5.2rem;
+			line-height: 5.4rem;
 		}
 		&__hero-subtext {
 			font-size: 2rem;
@@ -87,11 +87,18 @@
 		&__item {
 			gap: 3em;
 			&__img {
-				height: 100px;
+				height: 90px;
 			}
 			&__text {
 				max-width: 240px;
-				font-size: 2rem;
+				font-size: 1.8rem;
+			}
+		}
+	}
+	.aboutus {
+		&__text-container {
+			&__main-text {
+				line-height: 2.8rem;
 			}
 		}
 	}
@@ -111,7 +118,7 @@
 	}
 	.services {
 		&__img {
-			max-width: 420px;
+			max-width: 360px;
 		}
 		&__service-title {
 			font-size: 2.4rem;
@@ -119,26 +126,26 @@
 		}
 		&__text-container {
 			&__main-text {
-				line-height: 3rem;
+				font-size: 1.8rem;
+				line-height: 2.8rem;
 			}
 		}
 	}
 	.installation {
-		width: 100%;
 		&__introduction {
 			max-width: 675px;
-			font-size: 2rem;
+			font-size: 1.8rem;
 		}
 		&__step {
-			width: 100%;
+			gap: 2rem;
 			&__title {
-				font-size: 2.4rem;
+				font-size: 2.2rem;
 				margin-bottom: 1.2rem;
 			}
 			&__description {
 				font-size: 1.8rem;
+				line-height: 2.6rem;
 				max-width: 650px;
-				width: 100%;
 				margin-bottom: 1.4rem;
 			}
 		}
@@ -149,9 +156,10 @@
 			margin-bottom: 3.6em;
 			&__text {
 				font-size: 1.8rem;
+				line-height: 2.4rem;
 				margin-bottom: 1.4rem;
 				max-width: 480px;
-			}	
+			}
 			&__name {
 				font-size: 1.8rem;
 				font-weight: 700;
@@ -252,30 +260,47 @@
 			}
 		}
 	}
-	.services{
-		&__img{
+	.services {
+		&__img {
 			max-width: 280px;
 			width: 100%;
 		}
 	}
-	.section3 {
-		&__container {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			width: 100%;
+	.services {
+		&__img {
+			max-width: 380px;
 		}
-		&__items {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(31%, 1fr));
-			gap: 2em;
-			margin-block: 0.5em;
-			&__img {
+		&__service-title {
+			font-size: 2.4rem;
+			margin-bottom: 1em;
+		}
+		&__text-container {
+			&__main-text {
+				font-size: 1.8rem;
+				line-height: 3rem;
+			}
+		}
+	}
+	.installation {
+		&__introduction {
+			max-width: 675px;
+			font-size: 1.8rem;
+		}
+		&__steps,
+		&__step {
+			max-width: 690px !important;
+		}
+		&__step {
+			&__title {
+				font-size: 2.2rem;
+				margin-bottom: 1.2rem;
+			}
+			&__description {
+				font-size: 1.8rem;
+				line-height: 2.6rem;
+				max-width: 650px;
 				width: 100%;
-				aspect-ratio: 1 / 1;
-				object-fit: cover;
-				display: block;
+				margin-bottom: 1.4rem;
 			}
 		}
 	}
@@ -323,7 +348,8 @@
 			width: 100%;
 		}
 		&__hero-text {
-			font-size: 5.8rem;
+			font-size: 5.6rem;
+			line-height: 6.4rem;
 		}
 	}
 	.sub-h {
@@ -334,7 +360,7 @@
 		}
 	}
 	.aboutus,
-	.section3 {
+	.services {
 		.section-title {
 			margin-bottom: 2.4em;
 		}
@@ -350,6 +376,20 @@
 			width: 100%;
 		}
 	}
+	.services {
+		&__container {
+			margin-bottom: 12rem;
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+			}
+		}
+		&__text-container {
+			&__main-text {
+				font-size: 1.8rem;
+				line-height: 3rem;
+			}
+		}
+	}
 	.aboutus {
 		&__text-container {
 			align-items: flex-end;
@@ -358,19 +398,6 @@
 		&__img {
 			position: relative;
 			left: -6em;
-		}
-	}
-	.section3 {
-		&__text-container {
-			order: -1;
-			align-items: flex-start;
-			&__main-text {
-				text-align: left;
-			}
-		}
-		&__img {
-			position: relative;
-			right: -6em;
 		}
 	}
 	.testimonials {
@@ -386,7 +413,7 @@
 		&__item {
 			text-align: center;
 			&__text {
-				font-size: 1.6rem;
+				font-size: 1.8rem;
 				margin-bottom: 1.4rem;
 				max-width: 480px;
 			}
