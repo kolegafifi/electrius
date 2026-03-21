@@ -2,7 +2,7 @@
 @use 'reset';
 @media (min-width: 576px) {
 	.section-title {
-		font-size: 2.8rem;
+		font-size: 3.2rem;
 	}
 	.m-cta1 {
 		padding: 1.2em;
@@ -46,13 +46,12 @@
 		}
 		&__contact-us {
 			display: flex;
-			padding: 0.4em 0.6em;
+			padding: 0.5em 0.8em;
 			border-radius: 0.5em;
 			font-size: 1.6rem;
 			border: 3px solid white;
 			color: white;
 			transition: 0.3s;
-			&:focus,
 			&:hover {
 				background-color: white;
 				color: black;
@@ -67,9 +66,11 @@
 		}
 		&__hero-text {
 			font-size: 4.6rem;
+			line-height: 5.2rem;
 		}
 		&__hero-subtext {
 			font-size: 2rem;
+			line-height: 2.6rem;
 		}
 	}
 	.sub-h {
@@ -86,16 +87,16 @@
 		&__item {
 			gap: 3em;
 			&__img {
-				height: 90px;
+				height: 100px;
 			}
 			&__text {
 				max-width: 240px;
-				font-size: 1.8rem;
+				font-size: 2rem;
 			}
 		}
 	}
-	.panels,
-	.magazines {
+	.aboutus,
+	.services {
 		&__container {
 			gap: 5em;
 		}
@@ -103,9 +104,22 @@
 			max-width: 600px;
 			gap: 2rem;
 			&__main-text {
-				font-size: 1.8rem;
-				text-align: center;
+				font-size: 2rem;
 				font-weight: 500;
+			}
+		}
+	}
+	.services {
+		&__img {
+			max-width: 420px;
+		}
+		&__service-title {
+			font-size: 2.4rem;
+			margin-bottom: 0.8em;
+		}
+		&__text-container {
+			&__main-text {
+				line-height: 3rem;
 			}
 		}
 	}
@@ -113,16 +127,19 @@
 		width: 100%;
 		&__introduction {
 			max-width: 675px;
+			font-size: 2rem;
 		}
 		&__step {
 			width: 100%;
 			&__title {
-				font-size: 2.2rem;
+				font-size: 2.4rem;
+				margin-bottom: 1.2rem;
 			}
 			&__description {
 				font-size: 1.8rem;
 				max-width: 650px;
 				width: 100%;
+				margin-bottom: 1.4rem;
 			}
 		}
 	}
@@ -131,22 +148,12 @@
 			text-align: center;
 			margin-bottom: 3.6em;
 			&__text {
-				font-size: 1.6rem;
+				font-size: 1.8rem;
 				margin-bottom: 1.4rem;
 				max-width: 480px;
-			}
-			&__person {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				gap: 1.2em;
-			}
-			&__img {
-				width: 40px;
-				height: 40px;
-			}
+			}	
 			&__name {
-				font-size: 1.6rem;
+				font-size: 1.8rem;
 				font-weight: 700;
 				color: #5b5a5a;
 			}
@@ -217,7 +224,7 @@
 			.magazyn-p {
 				font-size: 1.8rem;
 			}
-			.wynik-instalacji-p{
+			.wynik-instalacji-p {
 				font-size: 2rem;
 				font-weight: 500;
 			}
@@ -245,7 +252,13 @@
 			}
 		}
 	}
-	.gallery {
+	.services{
+		&__img{
+			max-width: 280px;
+			width: 100%;
+		}
+	}
+	.section3 {
 		&__container {
 			display: flex;
 			justify-content: center;
@@ -265,6 +278,18 @@
 				display: block;
 			}
 		}
+	}
+	.faq {
+		padding: 80px 0;
+	}
+	.faq-question {
+		font-size: 2rem;
+		padding: 22px 20px;
+	}
+
+	.faq-answer-content {
+		padding: 0 20px 22px 20px;
+		font-size: 1.8rem;
 	}
 	.installation {
 		&__steps {
@@ -308,8 +333,8 @@
 			text-align: center;
 		}
 	}
-	.panels,
-	.magazines {
+	.aboutus,
+	.section3 {
 		.section-title {
 			margin-bottom: 2.4em;
 		}
@@ -321,31 +346,21 @@
 			gap: 4em;
 			width: 100%;
 		}
-		&__img {
-			object-fit: cover;
-			width: 110%;
-			max-width: 760px;
-			border-radius: 1em;
-		}
 		&__text-container {
-			max-width: 550px;
 			width: 100%;
 		}
 	}
-	.panels {
+	.aboutus {
 		&__text-container {
 			align-items: flex-end;
 			order: 2;
-			&__main-text {
-				text-align: right;
-			}
 		}
 		&__img {
 			position: relative;
 			left: -6em;
 		}
 	}
-	.magazines {
+	.section3 {
 		&__text-container {
 			order: -1;
 			align-items: flex-start;

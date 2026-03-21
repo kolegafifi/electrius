@@ -7,7 +7,7 @@
     <title>Electrius - Nowoczesne Systemy i Usługi Elektryczne</title>
     <meta name="description"
         content="Electris to Polska Firma zajmująca się kompleksowymi usługami elektrycznymi dla domu i firmy. Instalacje elektryczne, pomiary, monitoring, automatyka i serwis instalacji." />
-    <link rel="icon" href="dist/img/sunetic-sun.svg" type="image/x-icon">
+    <link rel="icon" href="src/img/electrius-small-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
@@ -18,14 +18,15 @@
             <div class="nav__items">
                 <a href="index.html#beginning">
                     <div class="small-logo">
-                        <img class="small-logo__img" src="" alt="logotyp marki">
+                        <img class="small-logo__img" src="/src/img/electrius-small-removebg-preview.png"
+                            alt="logotyp marki">
                     </div>
                 </a>
                 <div class="nav__mid-items">
-                    <a class="nav__mid-items__item" href="index.html#panels">Panele</a>
-                    <a class="nav__mid-items__item" href="index.html#magazines">Magazyny</a>
-                    <a class="nav__mid-items__item" href="index.html#installation">Instalacja</a>
-                    <a class="nav__mid-items__item" href="index.html#gallery">Galeria</a>
+                    <a class="nav__mid-items__item" href="index.html#aboutus">O Nas</a>
+                    <a class="nav__mid-items__item" href="index.html#services">Oferta Usług</a>
+                    <a class="nav__mid-items__item" href="index.html#installation">Gdzie Działamy</a>
+                    <a class="nav__mid-items__item" href="index.html#section3">Wasze Opinie</a>
                 </div>
                 <div class="nav__right-items">
                     <a href="kontakt.html">
@@ -40,13 +41,13 @@
         <div class="dropout-nav__container">
             <img src="dist/img/close-icon.svg" alt="" class="dropout-nav__close">
             <div class="dropout-nav__items">
-                <a href="index.html#panels" class="dropout-nav__items__item">Panele Słoneczne</a>
+                <a href="index.html#aboutus" class="dropout-nav__items__item">O Nas</a>
                 <div class="dropout-nav__line-between"></div>
-                <a href="index.html#magazines" class="dropout-nav__items__item">Magazyny Energii</a>
+                <a href="index.html#services" class="dropout-nav__items__item">Oferta Usług</a>
                 <div class="dropout-nav__line-between"></div>
-                <a href="index.html#installation" class="dropout-nav__items__item">Instalacja</a>
+                <a href="index.html#installation" class="dropout-nav__items__item">Gdzie Działamy</a>
                 <div class="dropout-nav__line-between"></div>
-                <a href="index.html#gallery" class="dropout-nav__items__item">Galeria</a>
+                <a href="index.html#section3" class="dropout-nav__items__item">Wasze Opinie</a>
                 <div class="dropout-nav__line-between"></div>
                 <a href="kontakt.html" class="dropout-nav__items__item">Kontakt</a>
             </div>
@@ -55,14 +56,14 @@
     <div class="header">
         <div class="wrapper">
             <div class="header__container">
-                <h1 class="header__hero-text">Czerp ze Słońca 100% z panelami <span>Sunetic</span></h1>
-                <p class="header__hero-subtext">Oferujemy markowe panele fotowoltaiczne z innowacyjną bezstratną
-                    instalacją
-                    do
-                    21kWp</p>
-                <a href="wycena.html">
+                <div class="ng"></div>
+                <h1 class="header__hero-text">Instalacje i usługi elektryczne dla domu i firmy</h1>
+                <p class="header__hero-subtext">Wykonujemy instalacje elektryczne, pomiary oraz montujemy nowoczesne
+                    systemy
+                    automatyki i monitoringu. Działamy na terenie Warszawy oraz okolic.</p>
+                <a href="#services" style="z-index: 1;">
                     <div class="m-cta1">
-                        <p class="m-cta1__text">Bezpłatna wycena</p>
+                        <p class="m-cta1__text">Sprawdź ofertę</p>
                     </div>
                 </a>
             </div>
@@ -73,61 +74,108 @@
             <div class="wrapper">
                 <div class="benefits__items">
                     <div class="benefits__item">
-                        <img src="dist/img/piorun.svg" alt="" class="benefits__item__img benefits-img-1">
-                        <p class="benefits__item__text">Gwarancja obniżenia opłat za prąd nawet do 100% rocznie</p>
+                        <img src="./src/img/security.png" alt="" class="benefits__item__img benefits-img-1">
+                        <p class="benefits__item__text">Bezpieczne i zgodne z normami instalacje</p>
                     </div>
                     <div class="benefits__item">
-                        <img src="dist/img/ekologia.svg" alt="" class="benefits__item__img benefits-img-1">
-                        <p class="benefits__item__text">Generuj całkowicie przyjazną naturze, Twoją własną energie
+                        <img src="src/img/rush.png" alt="" class="benefits__item__img benefits-img-1">
+                        <p class="benefits__item__text">Szybka reakcja i terminowa realizacja
                         </p>
                     </div>
                     <div class="benefits__item">
-                        <img src="dist/img/pieniadze.svg" alt="" class="benefits__item__img benefits-img-1">
-                        <p class="benefits__item__text">Otrzymaj dofinansowanie do paneli od Unii Europejskiej
+                        <img src="src/img/lightning.png" alt="" class="benefits__item__img benefits-img-1">
+                        <p class="benefits__item__text">7+ lat doświadczenia w branży
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="panels section" id="panels">
+        <section class="aboutus section" id="aboutus">
             <div class="wrapper">
-                <h2 class="section-title">Panele Słoneczne</h2>
-                <div class="panels__container">
-                    <img src="dist/img/panele-mobile.webp" alt="" class="panels__img">
+                <h2 class="section-title">O nas</h2>
+                <div class="aboutus__container">
+                    <p class="aboutus__text-container__main-text">Jesteśmy firmą Electrius specjalizującą się w
+                        instalacjach oraz usługach elektrycznych dla domów, mieszkań i firm. Realizujemy instalacje
+                        elektryczne, pomiary, modernizacje oraz systemy monitoringu i automatyki budynków.
 
-                    <div class="panels__text-container">
-                        <div class="panels__text-container__warranty">
-                            <img src="dist/img/narzedzia.svg" alt="">
-                            <p>4 lata gwarancji</p>
-                        </div>
-                        <p class="panels__text-container__main-text">Nasze panele mają reputacje najlepszych w swojej
-                            klasie nie bez powodu. Poprzez swoją innowacyjną budowę oraz najwyższej jakości materiały
-                            pobierają one ~93% energii z promieni słonecznych. Oferują one dużo, za niedużo. </p>
-                        <a href="#">
-                            <div class="our-offer-cta">Nasza Oferta</div>
-                        </a>
-                    </div>
+                        Nasze usługi wykonujemy zgodnie z obowiązującymi normami oraz zasadami bezpieczeństwa.
+                        Pracujemy
+                        na sprawdzonych urządzeniach renomowanych producentów, m.in. Hikvision, Dahua, BCS, Satel oraz
+                        Risco - zapewniamy najwyższą jakość.</p>
 
                 </div>
             </div>
         </section>
-        <section class=" magazines section" id="magazines">
+        <section class=" services section" id="services">
             <div class="wrapper">
-                <h2 class="section-title">Magazyny Energii</h2>
-                <div class="magazines__container">
-                    <img src="dist/img/magazyny-all.webp" alt="" class="magazines__img">
-                    <div class="magazines__text-container">
-                        <div class="magazines__text-container__warranty">
-                            <img src="dist/img/narzedzia.svg" alt="">
-                            <p>4 lata gwarancji</p>
-                        </div>
-                        <p class="magazines__text-container__main-text">Markowe magazyny energii, które w ciągu dnia
-                            pobierają nadmiar energii, a w nocy przy niedoborze promieni słonecznych nieprzerwanie
-                            zasilają dom. Brzmi jak coś niesamowitego? Takie są realia z Sunetic i naszymi najnowszymi
-                            magazynami energii.</p>
-                        <a href="#">
-                            <div class="our-offer-cta">Nasza Oferta</div>
-                        </a>
+                <h2 class="section-title">Oferta Usług</h2>
+                <div class="services__container">
+
+                    <img src="src/img/Electrician-amico.svg"
+                        alt="obrazek elektryka pracującego przy instalacji elektryczej" class="services__img">
+                    <div class="services__text-container">
+                        <h4 class="services__service-title">Montaż instalacji elektrycznej</h4>
+                        <p class="services__text-container__main-text">Wykonujemy montaż instalacji elektrycznych w
+                            domach, mieszkaniach oraz obiektach firmowych. Realizujemy instalacje od podstaw oraz
+                            modernizujemy istniejące systemy elektryczne. Zakres prac obejmuje prowadzenie okablowania,
+                            montaż rozdzielni, zabezpieczeń oraz przygotowanie instalacji pod oświetlenie, gniazda i
+                            urządzenia elektryczne. Instalacje wykonujemy zgodnie z dokumentacją techniczną oraz
+                            wymaganiami danego obiektu.</p>
+                    </div>
+
+                </div>
+                <div class="services__container">
+
+                    <img src="src/img/Electrician-pana.svg"
+                        alt="obrazek elektryka pracującego przy instalacji elektryczej" class="services__img">
+                    <div class="services__text-container">
+                        <h4 class="services__service-title">Pomiary elektryczne</h4>
+                        <p class="services__text-container__main-text">Wykonujemy pomiary instalacji elektrycznych w
+                            budynkach mieszkalnych oraz obiektach firmowych. Zakres obejmuje pomiary rezystancji
+                            izolacji, ciągłości przewodów ochronnych, impedancji pętli zwarcia oraz sprawdzenie
+                            działania zabezpieczeń. Na podstawie wykonanych pomiarów sporządzana jest dokumentacja
+                            pomiarowa oraz certyfikat kalibracji.</p>
+                    </div>
+
+                </div>
+                <div class="services__container">
+
+                    <img src="src/img/elektryk-real.webp"
+                        alt="obrazek elektryka pracującego przy instalacji elektryczej" class="services__img">
+                    <div class="services__text-container">
+                        <h4 class="services__service-title">Monitoring i systemy zabezpieczeń</h4>
+                        <p class="services__text-container__main-text">Wykonujemy instalacje systemów monitoringu CCTV
+                            oraz alarmów SSWiN w budynkach mieszkalnych i obiektach firmowych. Zakres prac obejmuje
+                            montaż kamer, rejestratorów, czujników ruchu oraz prowadzenie okablowania systemowego.
+                            Instalacja konfigurowana jest tak, aby umożliwić stały podgląd oraz rejestrację obrazu.</p>
+                    </div>
+
+                </div>
+                <div class="services__container">
+
+                    <img src="src/img/gate-electrician.webp"
+                        alt="obrazek elektryka pracującego przy instalacji elektryczej" class="services__img">
+                    <div class="services__text-container">
+                        <h4 class="services__service-title">Automatyka bram</h4>
+                        <p class="services__text-container__main-text">Wykonujemy montaż systemów automatyki bram
+                            wjazdowych oraz garażowych w budynkach mieszkalnych i obiektach firmowych. Zakres prac
+                            obejmuje instalację napędów, central sterujących, fotokomórek oraz okablowania systemowego.
+                            System konfigurowany jest z pilotami, sterowaniem radiowym lub integracją z systemem
+                            automatyki budynku.</p>
+                    </div>
+
+                </div>
+                <div class="services__container">
+
+                    <img src="src/img/20260316_1221_Image Generation_remix_01kkv619pdf7f8s8t5n4qjwxws.webp"
+                        alt="obrazek elektryka pracującego przy instalacji elektryczej" class="services__img">
+                    <div class="services__text-container">
+                        <h4 class="services__service-title">Instalacje teletechniczne i RTV/SAT</h4>
+                        <p class="services__text-container__main-text">Realizujemy instalacje teletechniczne w budynkach
+                            mieszkalnych i obiektach firmowych. Zakres prac obejmuje prowadzenie okablowania
+                            strukturalnego, montaż gniazd sieciowych, instalacji RTV/SAT oraz montaż i ustawianie anten
+                            telewizyjnych. Instalacje przygotowywane są pod dystrybucję sygnału telewizyjnego, sieci
+                            komputerowe oraz inne systemy komunikacyjne w budynku.</p>
                     </div>
 
                 </div>
@@ -135,43 +183,49 @@
         </section>
         <section class="section installation" id="installation">
             <div class="wrapper">
-                <h2 class="section-title">Instalacja Fotowoltaiki</h2>
+                <h2 class="section-title">Jak działamy</h2>
                 <div class="installation__container">
 
-                    <p class="installation__introduction">Przedstawimy Wam, jak wygląda proces instalacji fotowoltaiki w
-                        domu, <span>krok po kroku</span>.</p>
+                    <p class="installation__introduction">
+                        Pokażemy Ci, jak przebiega realizacja instalacji lub usługi
+                        elektrycznej – <span>krok po kroku</span>.</p>
                     <div class="installation__steps">
                         <div class="installation__step">
-                            <p class="installation__step__title">1. Audyt i analiza potrzeb</p>
-                            <p class="installation__step__description">Po uważnym wysłuchaniu wymagań klienta oraz po
-                                sprawdzeniu rocznego zapotrzebowania energii w danym domu wybieramy konkretne panele,
-                                które idealnie wpasują się i będą generować wystarczającą ilość energii dla potrzeb
-                                gospodarstwa domowego.</p>
+                            <p class="installation__step__title"><span class="installation__step__num"> 1.
+                                </span>Kontakt
+                                i konsultacja</p>
+                            <p class="installation__step__description">Rozmawiamy o Twoich potrzebach i zakresie prac.
+                                Na podstawie rozmowy określamy wstępny zakres instalacji lub usługi elektrycznej.</p>
                         </div>
                         <div class="installation__step">
-                            <p class="installation__step__title">2. Projekt systemu PV</p>
-                            <p class="installation__step__description">Na podstawie danych dobierana jest moc
-                                instalacji, liczba paneli, inwerter oraz potrzebne zabezpieczenia i okablowanie.</p>
+                            <p class="installation__step__title"><span class="installation__step__num"> 2.</span>
+                                Oględziny i wycena</p>
+                            <p class="installation__step__description">Sprawdzamy miejsce realizacji oraz przygotowujemy
+                                szczegółową wycenę i plan wykonania instalacji.</p>
                         </div>
                         <div class="installation__step">
-                            <p class="installation__step__title">3. Formalności</p>
-                            <p class="installation__step__description">Instalację zgłasza się do operatora sieci (OSD),
-                                a w razie potrzeby załatwia dodatkowe zgody – np. u konserwatora zabytków.</p>
+                            <p class="installation__step__title"><span class="installation__step__num"> 3.</span>
+                                Przygotowanie instalacji</p>
+                            <p class="installation__step__description">Dobieramy odpowiednie materiały, zabezpieczenia
+                                oraz rozwiązania techniczne dopasowane do budynku i potrzeb użytkownika.</p>
                         </div>
                         <div class="installation__step">
-                            <p class="installation__step__title">4. Montaż instalacji</p>
-                            <p class="installation__step__description">Zespół profesjonalistów montuje konstrukcję na
-                                dachu, zakłada panele, podłącza falownik i wykonuje połączenia kablowe DC i AC.</p>
+                            <p class="installation__step__title"><span class="installation__step__num"> 4.</span>Montaż
+                                i realizacja prac</p>
+                            <p class="installation__step__description">Wykonujemy instalację elektryczną zgodnie z
+                                obowiązującymi normami, dbając o bezpieczeństwo oraz wysoką jakość wykonania.</p>
                         </div>
                         <div class="installation__step">
-                            <p class="installation__step__title">5. Testy i uruchomienie</p>
-                            <p class="installation__step__description">Po instalacji sprawdza się poprawność połączeń,
-                                konfiguruje falownik i uruchamia system z monitoringiem online.</p>
+                            <p class="installation__step__title"><span class="installation__step__num"> 5.</span> Testy
+                                i odbiór instalacji</p>
+                            <p class="installation__step__description">Sprawdzamy poprawność działania instalacji,
+                                wykonujemy pomiary elektryczne i przekazujemy instalację gotową do użytkowania.</p>
                         </div>
                         <div class="installation__step">
-                            <p class="installation__step__title">6. Satysfakcja</p>
-                            <p class="installation__step__description">Korzystaj z prądu, ładuj swoje EV,
-                                zasilaj piec elektryczny za grosze przez reszte życia.</p>
+                            <p class="installation__step__title"><span class="installation__step__num"> 6.</span>
+                                Twoja satysfakcja</p>
+                            <p class="installation__step__description">Po zakończeniu prac upewniamy się, że wszystko
+                                działa prawidłowo, a instalacja spełnia Twoje oczekiwania.</p>
                         </div>
                     </div>
                 </div>
@@ -183,42 +237,38 @@
                     <h2 class="section-title">Wasze Opinie</h2>
                     <div class="testimonials__items">
                         <div class="testimonials__item">
-                            <p class="testimonials__item__text">“Rachunki za prąd spadły diametralnie, muszę każdemu
-                                polecić Sunetic, lepsi od konkurencji!”</p>
+                            <p class="testimonials__item__text">“Firma wykonywała instalację elektryczną w domu
+                                jednorodzinnym. Prace przebiegły sprawnie, wszystko wykonane zgodnie z ustaleniami i
+                                dokumentacją. Dobry kontakt i szybka realizacja.”</p>
                             <div class="testimonials__item__person">
-                                <img src="dist/img/kobieta1.svg" alt="recenzentka monika"
-                                    class="testimonials__item__img">
                                 <p class="testimonials__item__name">Monika S.</p>
                             </div>
 
                         </div>
                         <div class="testimonials__item">
-                            <p class="testimonials__item__text">“Polecam, konkretni chłopacy przyszli zamontować
-                                profesjonalnie panele, od 2 miesięcy cieszę się darmowym prądem.”</p>
+                            <p class="testimonials__item__text">“Zleciliśmy montaż monitoringu oraz video-domofonu.
+                                Instalacja została wykonana estetycznie, a system działa bez problemów. Całość została
+                                dokładnie wyjaśniona po montażu.”</p>
                             <div class="testimonials__item__person">
-                                <img src="dist/img/mezczyzna2.svg" alt="recenzent karol"
-                                    class="testimonials__item__img">
-                                <p class="testimonials__item__name">Karol P.</p>
+                                <p class="testimonials__item__name">Tomasz W.</p>
                             </div>
 
                         </div>
                         <div class="testimonials__item">
-                            <p class="testimonials__item__text">“Zakładając firme nie zdawałem sobie sprawy z kosztów
-                                prądu, dzięki Bogu za Sunetic!”</p>
+                            <p class="testimonials__item__text">“Zamawiałem pomiary instalacji elektrycznej do odbioru
+                                budynku. Dokumentacja została przygotowana szybko i bez problemów. Profesjonalne
+                                podejście pana Jana do tematu.”</p>
                             <div class="testimonials__item__person">
-                                <img src="dist/img/mezczyzna3.svg" alt="recenzent piotr"
-                                    class="testimonials__item__img">
                                 <p class="testimonials__item__name">Piotr L.</p>
                             </div>
 
                         </div>
                         <div class="testimonials__item">
-                            <p class="testimonials__item__text">“Zielona energia to najlepsze co mnie spotkało w EU.
-                                Dostałem 7000zł dofinansowania więc panele wyszły mi niemal za darmo!!!”</p>
+                            <p class="testimonials__item__text">“Montaż automatyki do bramy oraz instalacja oświetlenia
+                                zewnętrznego. Wszystko działa bardzo dobrze, instalacja wykonana solidnie i
+                                estetycznie.”</p>
                             <div class="testimonials__item__person">
-                                <img src="dist/img/mezczyzna5.png" alt="recenzent ahmed"
-                                    class="testimonials__item__img">
-                                <p class="testimonials__item__name">Ahmed H.</p>
+                                <p class="testimonials__item__name">Michał K.</p>
                             </div>
 
                         </div>
@@ -226,17 +276,61 @@
                 </div>
             </div>
         </section>
-        <section class="gallery section" id="gallery">
+        <section class="faq">
             <div class="wrapper">
-                <div class="gallery__container">
-                    <h2 class="section-title">Galeria Naszych Prac</h2>
-                    <div class="gallery__items">
-                        <img src="dist/img/dom1.webp" alt="dom 1" class="gallery__items__img">
-                        <img src="dist/img/dom2.webp" alt="dom 2" class="gallery__items__img">
-                        <img src="dist/img/dom3.webp" alt="dom 3" class="gallery__items__img">
-                        <img src="dist/img/dom10.webp" alt="dom 4" class="gallery__items__img">
-                        <img src="dist/img/dom5.webp" alt="dom 5" class="gallery__items__img">
-                        <img src="dist/img/dom6.webp" alt="dom 6" class="gallery__items__img">
+                <div class="container">
+                    <h2 class="section-title">Najczęściej zadawane pytania</h2>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Jak wygląda wycena instalacji elektrycznej?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Wycena przygotowywana jest na podstawie zakresu prac, liczby punktów elektrycznych oraz
+                                rodzaju budynku. Wstępna wycena może zostać przygotowana na podstawie projektu lub
+                                informacji od klienta.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Czy do wykonania instalacji potrzebny jest projekt?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                W przypadku nowych budynków instalacja wykonywana jest zazwyczaj na podstawie projektu.
+                                Przy modernizacji istniejącej instalacji zakres prac ustalany jest podczas oględzin.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Ile czasu trwa wykonanie instalacji elektrycznej?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Czas realizacji zależy od wielkości budynku oraz zakresu prac. Dokładny termin ustalany
+                                jest po zapoznaniu się z zakresem zlecenia.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Czy możliwa jest realizacja kilku usług jednocześnie?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-content">
+                                Tak, możliwe jest wykonanie kilku instalacji w ramach jednego zlecenia, np. instalacji
+                                elektrycznej, monitoringu, automatyki bram czy instalacji teletechnicznej.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,9 +338,9 @@
         <section class="section cta-section-bottom">
             <div class="wrapper">
                 <div class="cta-section-bottom__container">
-                    <a href="wycena.html">
+                    <a href="tel:+48514789249">
                         <div class="m-cta1">
-                            <p class="m-cta1__text">Bezpłatna wycena</p>
+                            <p class="m-cta1__text">Zadzwoń do nas</p>
                         </div>
                     </a>
                     <p style="text-align: center; font-size: 1.6rem;">lub</p>
@@ -264,39 +358,42 @@
             <div class="footer__container">
                 <div class="footer__upper">
                     <div class="small-logo">
-                        <p class="small-logo__text">Sunetic</p>
-                        <img class="small-logo__img" src="dist/img/sunetic-sun.svg" alt="logotyp marki">
+                        <p class="small-logo__text">Electrius Jan Kazimierczak</p>
                     </div>
-                    <span>Al. Wymyślna 101 <br>
-                        00-001 Warszawa, <br>
-                        Polska</span>
+                    <span class="small-logo__span">Wesoła 5 <br>
+                        05-083 Zaborówek, <br>
+                        Polska <br>
+                        NIP 1182317966</span>
                 </div>
                 <div class="footer__mid">
                     <div class="footer__mid__top">
                         <p class="footer__mid__title">Szybki powrót</p>
                         <div class="footer__mid__items">
-                            <a href="index.html#panels">Panele Fotowoltaiczne</a>
-                            <a href="index.html#magazines">Magazyny Energii</a>
-                            <a href="index.html#installation">Instalacja (Krok Po Kroku)</a>
-                            <a href="index.html#gallery">Galeria Naszych Prac</a>
+                            <a href="index.html#aboutus">O nas</a>
+                            <a href="index.html#services">Ofera Usług</a>
+                            <a href="index.html#installation">Gdzie Działamy</a>
+                            <a href="index.html#section3">Wasze Opinie</a>
                         </div>
                     </div>
                     <div class="footer__mid__bot">
-                        <p href="#panels" class="footer__mid__title">Chcesz podobną stronę?</p>
+                        <p href="#aboutus" class="footer__mid__title">Znajdziesz nas tutaj</p>
                         <div class="footer__mid__items">
-                            <a href="tel:+48731394399">+48 731-394-399</a>
-                            <a href="mailto:wawrzyniakf8@gmail.com">wawrzyniakf8@gmail.com</a>
-                            <a href="https://www.instagram.com/kolegafifi/"><img src="dist/img/ig.svg"
-                                    alt="instagram icon" style="width: 50px;height: 50px;"></a>
+                            <a href="tel:+48514789249">+48 514789249</a>
+                            <a href="mailto:biuro@electrius.pl">biuro@electrius.pl</a>
+                            <a href="https://www.instagram.com/electrius.pl/"><img
+                                    src="src/img/instagram-logo-facebook-2-svgrepo-com.svg" alt="instagram icon"
+                                    style="width: 50px;height: 50px;"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <hr style="color: white;">
-        <p style=" padding-block: 2em; text-align: center; font-size: 1.4rem;">Wawrzyniak Filip. All Rights Reserved</p>
+        <p style=" padding-block: 2em; text-align: center; font-size: 1.4rem;">Electrius © . All Rights Reserved</p>
     </footer>
-    <div class="go-up"><img src="dist/img/arrow-up.svg" alt=""></div>
+    <a href="tel:+48514789249">
+        <div class="go-up"><img src="src/img/phone-call.png" alt="przycisk od dzwonienia do firmy electrius"></div>
+    </a>
 
     <script src="dist/js/script.min.js"></script>
 </body>

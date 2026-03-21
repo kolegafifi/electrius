@@ -11,6 +11,37 @@ window.addEventListener('DOMContentLoaded', () => {
 			dropoutNav.classList.remove('show-dropout-nav')
 		}
 	}
+	const faqItems = document.querySelectorAll('.faq-item')
+
+	faqItems.forEach(item => {
+		const button = item.querySelector('.faq-question')
+		const answer = item.querySelector('.faq-answer')
+		const content = item.querySelector('.faq-answer-content')
+
+		button.addEventListener('click', () => {
+			const isOpen = item.classList.contains('active')
+
+			faqItems.forEach(otherItem => {
+				const otherAnswer = otherItem.querySelector('.faq-answer')
+				otherItem.classList.remove('active')
+				otherAnswer.style.height = '0px'
+			})
+
+			if (!isOpen) {
+				item.classList.add('active')
+				answer.style.height = content.offsetHeight + 'px'
+			}
+		})
+	})
+
+	window.addEventListener('resize', () => {
+		const activeItem = document.querySelector('.faq-item.active')
+		if (activeItem) {
+			const answer = activeItem.querySelector('.faq-answer')
+			const content = activeItem.querySelector('.faq-answer-content')
+			answer.style.height = content.offsetHeight + 'px'
+		}
+	})
 	dropoutNavItems.forEach(item => {
 		item.addEventListener('click', handleDropoutNav)
 	})
@@ -20,10 +51,6 @@ window.addEventListener('DOMContentLoaded', () => {
 		} else {
 			goUpBtn.classList.remove('show-go-up')
 		}
-	})
-
-	goUpBtn.addEventListener('click', () => {
-		window.scrollTo({ top: 0 })
 	})
 	burger.addEventListener('click', handleDropoutNav)
 	dropoutNavClose.addEventListener('click', handleDropoutNav)
