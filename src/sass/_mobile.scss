@@ -505,6 +505,12 @@
 			font-size: 1.4rem;
 			color: white;
 		}
+		&__logo {
+			&__text {
+				font-size: 1.8rem;
+				max-width: 150px;
+			}
+		}
 	}
 	&__mid {
 		display: flex;
