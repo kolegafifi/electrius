@@ -7,7 +7,6 @@ import cssnano from 'cssnano'
 import rename from 'gulp-rename'
 import babel from 'gulp-babel'
 import terser from 'gulp-terser'
-import imagemin from 'gulp-imagemin'
 import browserSyncPkg from 'browser-sync'
 
 const sass = gulpSass(dartSass)
@@ -50,7 +49,7 @@ export function scripts() {
 }
 
 export function images() {
-	return src(paths.images.src).pipe(imagemin()).pipe(dest(paths.images.dest))
+	return src(paths.images.src).pipe(dest(paths.images.dest))
 }
 
 export function serve(done) {
