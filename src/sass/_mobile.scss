@@ -167,6 +167,9 @@
 			padding-block: 0.6em;
 			color: white;
 			font-weight: 500;
+			&:last-of-type {
+				font-weight: bold;
+			}
 		}
 	}
 	&__line-between {
