@@ -1,6 +1,12 @@
 @use 'colors' as *;
 @use 'reset';
 @media (min-width: 576px) {
+	.small-logo {
+		display: flex;
+	}
+	.small-logo-mobile {
+		display: none;
+	}
 	.section-title {
 		font-size: 3.2rem;
 	}
@@ -39,6 +45,7 @@
 		font-size: 1.8rem;
 	}
 	.nav {
+		background: rgba(255, 255, 255, 0.3);
 		&__right-items {
 			display: flex;
 			align-items: center;

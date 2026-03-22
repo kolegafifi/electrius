@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 	const burger = document.querySelector('.nav__burger')
+	const nav = document.querySelector('.nav')
 	const dropoutNavClose = document.querySelector('.dropout-nav__close')
 	const dropoutNav = document.querySelector('.dropout-nav')
 	const dropoutNavItems = document.querySelectorAll('.dropout-nav__items__item')
@@ -50,6 +51,15 @@ window.addEventListener('DOMContentLoaded', () => {
 			goUpBtn.classList.add('show-go-up')
 		} else {
 			goUpBtn.classList.remove('show-go-up')
+		}
+	})
+	window.addEventListener('scroll', () => {
+		if (window.matchMedia('(min-width: 576px)').matches) {
+			if (window.scrollY > 740) {
+				nav.style.background = 'rgba(0,0,0,0.4)'
+			} else {
+				nav.style.background = 'rgba(255,255,255,0.4)'
+			}
 		}
 	})
 	burger.addEventListener('click', handleDropoutNav)
